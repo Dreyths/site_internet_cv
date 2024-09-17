@@ -162,23 +162,7 @@ nav {
 }
 /*(fin du site https://www.alsacreations.com/tuto/lire/547-Faire-un-site-pour-toutes-les-resolutions.html)*/
 
-/*style pour page centres d'interets*/
-.hobbies-style {
-  width: 75%;
-  /* height:85vh; */
-  border: 1px solid #333;
-  box-shadow: 8px 8px 5px #666;
-  padding: 8px 12px;
-  background-image: url("./images/parchemin.jpg");
-  /* background-image: url("./images/parchemin.jpg"); */
-  background-size:cover;
-  margin-top:2.5%;
-  margin-bottom:2.5%;
-  margin-left: 12.5%;
-  margin-right:12.5%;
-  margin:center;
-  opacity:72.5%;
-}
+
 /* logo linkedin dans nav bar */
 #logo{
    width:35px;
@@ -228,6 +212,7 @@ nav {
   margin:center;
 }
 
+/*style pour page centres d'interets*/
 .hobbies-style {
   width: 75%;
   /* height:85vh; */
@@ -244,6 +229,7 @@ nav {
   margin:center;
   opacity:72.5%;
 }
+
 /*style text pour centres d'interets*/
 .style_text_hobbies {
   text-align:center;
