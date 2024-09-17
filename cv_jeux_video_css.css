@@ -1,0 +1,268 @@
+
+/* MES 1ER TEST:
+		DANS CSS:
+
+
+ /* Place un bouton redirectionel (linkedin)*/
+/* bouton */
+/* { */
+/* background-image: url("./images/logo_linkedin.png"); */
+ /* font-family: Verdana, sans-serif;  */
+ /* font-size: 100%; */
+/* } */
+
+/* style de la miniature du profile: 
+.profile-picture { */
+  /* width: 50px; */
+  /* height: 50px; */
+  /* border-radius: 50%; */
+  /* background-color: gray; */
+  /* margin-right: 10px; */
+/* }
+ */
+ /* cree de class=for_the_horde dans html au prealable */
+	/* essaye de creation d'une 2eme image
+	/* .for_the_horde { */
+	/* background-image: url("./images/for_the_horde.jpg"); */
+
+/* } */
+		/* DANS HTML: */
+	
+/* <!-- Place une photo de profile (profile-picture): */
+	/* dans le body <div class="profile-picture"></div> --> */
+
+
+/*FIN DE MES 1ER TEST */
+
+
+
+
+/*responsive ( est le faite de pouvoir lire le site sur plusieur support  ( pc, telephone , tablette ...uniquement)??(https://www.alsacreations.com/tuto/lire/547-Faire-un-site-pour-toutes-les-resolutions.html)*/
+
+/* div { */
+  /* width: 100%; */
+  /* max-width: 10000px; */
+  /* min-width: 700px; */
+ /* } */
+
+
+/* place un fond d'acceuil*/
+body {
+background-image: url("./images/hello_dreyth.jpg"); 
+ font-family: Verdana, sans-serif; 
+ margin: 0;
+ min-height: 100vh;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position:center;
+ }
+ /* place un fond d'acceuil différent que celui du body */
+ .background_home {
+background-image: url("./images/murloc.jpg"); 
+font-family: Verdana, sans-serif; 
+margin: 0;
+min-height: 100vh;
+/* width: 1024px; */
+/* height: 1024px; */
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+ }
+ /* place un fond d'acceuil différent que celui du body */
+ .background_cv {
+background-image: url("./images/for_the_horde.jpg"); 
+font-family: Verdana, sans-serif; 
+margin: 0;
+min-height: 100vh;
+/* width: 545px; */
+/* height: 700px; */
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+ }
+  /* responsive 2nd try marche (https://www.alsacreations.com/tuto/lire/547-Faire-un-site-pour-toutes-les-resolutions.html)?? */
+ /* div { */
+/* width:expression(document.body.clientWidth >= 1000? "1000px": "auto" ); */
+/* }; */
+ /* </style> */
+/* <![endif]--> */
+/* } doit ce placé aprés les background pour voir un changement*/
+
+/*code css pour la navigation bar */
+/* On fait en sorte que chaque élément contienne sa marge interne avec box-sizing et on retire les traits qui sont par défaut sur les liens (https://believemy.com/r/creer-une-barre-de-navigation-avec-un-indicateur-anime)*/
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  }
+
+/* On modernise notre balise de navigation avec une petite ombre. On mets tous les éléments du menu les uns bien à côté des autres avec flexbox (display: flex) */
+nav {
+  /* background-image: url("./images/pubg_top_0.41%.jpg"); */
+  background-color:#fff;
+  padding: 0 20px;
+  border-radius: 40px;
+  width:30%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  position: relative;
+  margin-left: 33.3%;
+  top: 22.5px;
+  opacity:100%;
+  position: relative;
+  height:4vh;
+  margin:center; 
+}
+
+
+/* On stylise chaque élément */
+.nav-item {
+  color: #83818c;
+  font-family: arial, sans-serif;
+  padding: 10px;
+  margin-left:5%;
+  margin-right:5%;
+  /* margin-top:12.5%; */
+  /* margin-bottom:12.5%; */
+  margin: center;
+  position: relative;
+}
+
+/* Ici on met juste un petit élément avant chaque élément pour le rendre plus beau visuellement */
+.nav-item:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  background-color: #dfe2ea;
+  height: 5px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  left: 0;
+  transition: .3s;
+}
+
+/*nouveautés de CSS, on peut changer les propriétés des éléments selon des conditions avec not */
+.nav-item:not(.is-active):hover:before {
+  bottom: 0;
+}
+.nav-item:not(.is-active):hover {
+  color: #333;
+}
+
+/* Stylisons notre indicateur : tiret sous l'onglet */
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  transition: .4s;
+  border-radius: 8px 8px 0 0;
+}
+/*(fin du site https://www.alsacreations.com/tuto/lire/547-Faire-un-site-pour-toutes-les-resolutions.html)*/
+
+/*style pour page centres d'interets*/
+.hobbies-style {
+  width: 75%;
+  /* height:85vh; */
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #666;
+  padding: 8px 12px;
+  background-image: url("./images/parchemin.jpg");
+  /* background-image: url("./images/parchemin.jpg"); */
+  background-size:cover;
+  margin-top:2.5%;
+  margin-bottom:2.5%;
+  margin-left: 12.5%;
+  margin-right:12.5%;
+  margin:center;
+  opacity:72.5%;
+}
+/* logo linkedin dans nav bar */
+#logo{
+   width:35px;
+   float:center;
+   position:relative;
+   width:3vh;
+   height:3vh;
+   margin:center;
+}
+
+/*Remplacer par le code html dans le <nav <a href="https://fr.linkedin.com/in/fabien-abel-coindoz-17b780327" target= "_blank" class="nav-item" data-active-color="rebeccapurple" data-target="Contact"><img id="logo" src="./images/logo_linkedin.png"
+
+/* .shadowbox2 { */
+  /* width: 100%; */
+  /* border: 1px solid #333; */
+  /* border-radius: 10px; */
+  /* box-shadow: 8px 8px 5px #666; */
+  /* padding: 8px 12px; */
+  /* background-image: url("./images/logo_linkedin.png"); */
+/* background-origin: border-box; */
+/* background-repeat: no-repeat; */
+  /* background-size:100%; */
+  /* margin-top:2.5%; */
+  /* margin-bottom:2.5%; */
+    /* margin-left: 12.5%; */
+  /* margin-right:15%; */
+/* } */
+/* fin logo linkedin dans nav bar */
+
+/*style pouR page home */
+.home-style {
+  width: 75%;
+  /* width: 700px; */
+	/* height: 700px; */
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #666;
+  padding: 8px 12px;
+  background-image:url("./images/murloc0.webp"); 
+  background-repeat: no-repeat;
+  background-size:cover;
+  /* min-height: 100vh; */
+  margin-top:3%;
+  margin-left:12.5%;
+  opacity:75%;
+  background-position: 10% 40%;
+  /* background-position:center; */
+  margin:center;
+}
+/*style text pour centres d'interets*/
+.style_text_hobbies {
+  text-align:center;
+  text-align:solid;
+  font-style:italic;
+  font-weight:900;
+  opacity:100%;
+  font-size:133%;
+  font-family: Verdana, sans-serif;
+  /* margin-top:3%; */
+  /* margin-bottom:3%; */
+  /* margin:center; */
+  /* margin-left:22.5%; */
+  /* margin-right:22.5%; */
+}
+/*styletext pour page home*/
+.style_text_home {
+  text-align:center;
+  text-align:solid;
+  font-style:italic;
+  font-weight:900;
+  opacity:100%;
+  font-size:200%;
+  font-family: Verdana, sans-serif;
+  /* width:100vh; */
+  /* height:100vh; */
+}
+/*dimension de la pdf*/
+.cv-pdf {
+	margin-top:3%;
+	margin:center;
+	margin-left:22.5%;
+	margin-right:22.5%;
+	width: 50%;
+	height: 820px;
+  /* padding: 8px 12px; */
+}
+
+
